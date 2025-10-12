@@ -1,0 +1,1 @@
+# Neighbly.ArchitectureHarmonyIndexSystem
