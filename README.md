@@ -44,7 +44,7 @@ The system automatically generates a full set of visual reports for each analysi
 
 | Harmony Index | Components | Detailed Metrics | Before & After |
 | :---: | :---: | :---: | :---: |
-| ![Harmony Gauge](https://raw.githubusercontent.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/main/readme_assets/harmony_gauge_en.png) | ![Subindices Chart](https://raw.githubusercontent.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/main/readme_assets/subindices_chart_en.png) | ![Details View](https://raw.githubusercontent.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/main/readme_assets/details_view_en.png) | ![Before-After Chart](https://raw.githubusercontent.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/main/readme_assets/before_after_chart_en.png) |
+| ![Harmony Gauge]() | ![Subindices Chart]() | ![Details View](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/details_view_en.png) | ![Before-After Chart](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/before_after_chart_en.png) |
 
 
 ## How It Works: Technical Architecture
