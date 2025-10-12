@@ -4,7 +4,7 @@
 
 This project is a software implementation of the **Architectural Harmony Index** concept—a metric that quantitatively assesses how well a space conforms to the ideals of function and beauty.
 
-![Main Architectural Harmony Index Diagram](https://raw.githubusercontent.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/main/readme_assets/harmony_gauge_en.png)
+![Main Architectural Harmony Index Diagram]()
 
 
 ## Project Philosophy
@@ -44,7 +44,7 @@ The system automatically generates a full set of visual reports for each analysi
 
 | Harmony Index | Components | Detailed Metrics | Before & After |
 | :---: | :---: | :---: | :---: |
-| ![Harmony Gauge]() | ![Subindices Chart]() | ![Details View](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/details_view_en.png) | ![Before-After Chart](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/before_after_chart_en.png) |
+| ![Harmony Gauge](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/harmony_gauge_en.png) | ![Subindices Chart](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/subindices_chart_en.png) | ![Details View](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/details_view_en.png) | ![Before-After Chart](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/before_after_chart_en.png) |
 
 
 ## How It Works: Technical Architecture
