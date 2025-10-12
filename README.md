@@ -2,7 +2,7 @@
 
 **An analytical engine for calculating the Architectural Harmony Index and generating recommendations for improving living spaces.**
 
-This project is a software implementation of the **Architectural Harmony Index** concept—a metric that quantitatively assesses how well a space conforms to the ideals of function and beauty.
+This project is a software implementation of the **Architectural Harmony Index** concept — a metric that quantitatively assesses how well a space conforms to the ideals of function and beauty.
 
 ![Main Architectural Harmony Index Diagram](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/ArchitectureHarmonyIndexFORPREVIEWLOGO.png)
 
@@ -12,7 +12,7 @@ This project is a software implementation of the **Architectural Harmony Index**
 
 The project is based on the idea that architecture is a synthesis of science and art, function and aesthetics. A quality space is not just a collection of walls and furniture, but a balanced system that affects our well-being, productivity, and emotional state.
 
-**Neighbly.ArchitectureHarmonyIndexSystem** is an attempt to codify the key principles of architectural harmony, transforming them from abstract concepts into measurable indicators. This tool allows for an objective audit of any room, identifying its strengths and weaknesses, and proposing scientifically-grounded ways to improve it.
+**Architecture Harmony Index System** is an attempt to codify the key principles of architectural harmony, transforming them from abstract concepts into measurable indicators. This tool allows for an objective audit of any room, identifying its strengths and weaknesses, and proposing scientifically-grounded ways to improve it.
 
 
 ## What is the Architectural Harmony Index?
