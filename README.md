@@ -4,8 +4,9 @@
 
 This project is a software implementation of the **Architectural Harmony Index** concept—a metric that quantitatively assesses how well a space conforms to the ideals of function and beauty.
 
-![Main Architectural Harmony Index Diagram]()
+![Main Architectural Harmony Index Diagram](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/ArchitectureHarmonyIndexFORPREVIEWLOGO.png)
 
+<p align="right"><i>made by Ilya Trofimov. Contacts are below.</i></p>
 
 ## Project Philosophy
 
@@ -91,3 +92,20 @@ This repository is the "scientific heart" of a larger project. An Android mobile
 ## The Future of the Project
 
 The current system is a powerful tool for analyzing existing spaces. However, this is just the first step. The long-term goal of the project is to use this foundation to create principles for designing adaptive architectural systems. These are spaces that can not only be statically "good" but can also independently analyze their state and dynamically change to maintain the highest level of harmony, responding to changes in the environment and human needs.
+
+## Contact Me
+
+* **Telegram** - @Shelookslikefunn
+* **LinkedIn** - [tap!](https://www.linkedin.com/in/ilya-trofimov-64a779380/)
+
+Also check out my **Neighbly** application, which'll get a **massive update soon** (**will include this Index**)!
+
+* **Google Play** - [tap!](https://play.google.com/store/apps/details?id=com.neighbly.app)
+* **Telegram Community** - [tap!](t.me/Neighbly)
+
+Additional links (for your convenience)
+
+* **Instagram** - @ilyatrofimov_architecture
+* **X (Twitter)** - @ilytrof_arch
+* **Reddit** - [tap!](https://www.reddit.com/u/legsnfeetss/s/5gJj6djRKh)
+* **Gmail** - Sarkovvitala@gmail.com
