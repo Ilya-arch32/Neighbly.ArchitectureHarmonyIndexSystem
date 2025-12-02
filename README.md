@@ -1,97 +1,78 @@
-# Neighbly: Architecture Harmony Index System
+## Architectural Harmony Index System
 
-**An analytical engine for calculating the Architectural Harmony Index and generating recommendations for improving living spaces.**
+**AHI** is a multiphysics digital twin platform for assessing **"Architectural Harmony."** The system combines **engineering simulation** (*CFD, acoustics, energy efficiency*) with **cognitive neuroscience metrics** (*neuroaesthetics*) to create environments optimized for human health and perception.
 
-This project is a software implementation of the **Architectural Harmony Index** concept — a metric that quantitatively assesses how well a space conforms to the ideals of function and beauty.
+**Current status** (*TRL 6*): The system has been demonstrated as a fully functional prototype in a relevant environment. The physics cores (LBM, FDTD) have been internally validated on benchmarks. The project is being prepared for pilot testing with specialized experts.
 
-![Main Architectural Harmony Index Diagram](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/ArchitectureHarmonyIndexFORPREVIEWLOGO.png)
+# Key Features
+**1. Multiphysics Core (WebGPU)**
 
-<p align="right"><i>made by Ilya Trofimov. Contacts are below.</i></p>
+The system performs calculations directly in the browser, leveraging the computing power of the GPU:
 
-## Project Philosophy
+- **Aerodynamics** (LBM-LES): Lattice Boltzmann method (D3Q19) with the Smagorinsky turbulence model. Simulates natural ventilation and thermal convection.
 
-The project is based on the idea that architecture is a synthesis of science and art, function and aesthetics. A quality space is not just a collection of walls and furniture, but a balanced system that affects our well-being, productivity, and emotional state.
+- **Thermodynamics** (CHT + ISO 13788): Conjugate heat transfer with calculation of mold risk (moisture transport) and material buffering capacity (MBV).
 
-**Architecture Harmony Index System** is an attempt to codify the key principles of architectural harmony, transforming them from abstract concepts into measurable indicators. This tool allows for an objective audit of any room, identifying its strengths and weaknesses, and proposing scientifically-grounded ways to improve it.
+- **Acoustics** (FDTD): Finite difference time-domain method. Calculates RT60, C50, and speech intelligibility using Schroeder integration, taking diffraction into account.
 
+**2. Neuroaesthetic Analysis**
 
-## What is the Architectural Harmony Index?
+For the first time in the BIM industry, aesthetics are quantified:
 
-The Architectural Harmony Index (from 0 to 1) is a comprehensive indicator consisting of two key components:
+- **Fractal Dimension** (3D Box-Counting): Assessing the biophilic potential of architecture (D≈1.3−1.5).
 
-### 1. **The Function Index**
-This assesses how efficiently and comfortably a space performs from a physical and ergonomic perspective. It is calculated based on two modules:
-* **Thermodynamic Analysis:** Evaluates the heat loss of a room based on building materials, glazing area, and climatic conditions.
-* **Optical Analysis:** Assesses the quality of natural light, considering the size and orientation of windows, geographical location, and surface reflectance coefficients.
+- **Visual Entropy**: Scene complexity analysis to predict cognitive load.
 
-### 2. **The Beauty Index**
-This evaluates the aesthetic appeal and integrity of a space. In the current model, it is calculated based on three heuristics:
-* **Color Harmony:** Analyzes the compatibility of the main interior colors based on classic color schemes.
-* **Stylistic Unity:** Assesses the consistency of furniture with the declared style of the room.
-* **Spatial Efficiency:** Analyzes the balance between occupied and free space, preventing both "emptiness" and "clutter."
+- **Spectral Tracing**: Calculating circadian rhythms (EML/CS) taking into account the spectral properties of materials, not just luminance.
 
+**3. Autonomous Optimization**
 
-## Key Features
+**NSGA-III**: A genetic algorithm optimizes room geometry based on 10+ conflicting criteria (e.g., "Maximum Heat" vs. "Minimum Glare").
 
-* **Comprehensive Analysis:** Calculation of over 10 different metrics, from heat loss in Watts to the color harmony index.
-* **Intelligent Recommendations:** The system not only identifies problems but also runs "what-if" simulations to suggest the most effective improvements.
-* **Professional Data Visualization:** Automatic generation of a set of 8 detailed and stylish high-resolution charts for a clear presentation of the results.
-* **Modular Architecture:** All code is divided into independent modules (`thermal`, `optic`, `indexer`, `recommender`, etc.), ensuring flexibility and scalability.
+# Installation and Launch
 
+**Requirements** 
 
-## Results Gallery
+- **Browser with WebGPU support** (Chrome 113+, Edge).
 
-The system automatically generates a full set of visual reports for each analysis.
+- **Python 3.10+** (for the weather generation backend).
 
-| Harmony Index | Components | Detailed Metrics | Before & After |
-| :---: | :---: | :---: | :---: |
-| ![Harmony Gauge](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/harmony_gauge_en.png) | ![Subindices Chart](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/subindices_chart_en.png) | ![Details View](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/details_view_en.png) | ![Before-After Chart](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem/blob/main/visualizer/visualization_results/before_after_chart_en.png) |
+- **Node.js 18+** (for building the frontend).
 
+**Build bash**
 
-## How It Works: Technical Architecture
-
-The project is a data processing pipeline managed by a central script, `pipeline_manager.py`.
-
-1.  **Input Data:** The `pipeline_manager` receives a dictionary with complete room data.
-2.  **Analysis:** The data is sequentially passed to the modules:
-    * `modules/thermal.py` and `modules/optic.py` for physical calculations.
-    * `modules/indexer.py` and `modules/beauty_indexer.py` for index calculations.
-    * `modules/recommender.py` for generating recommendations.
-3.  **Visualization:** `visualizer/passport.py` receives all calculated data and creates a set of `.png` files.
-4.  **Output:** The `pipeline_manager` returns a single, comprehensive dictionary with all analysis results and paths to the created images.
-
-
-## How to Run and Test
-
-The project is written in Python and can be easily run locally.
-
-**1. Clone the repository:**
-```bash
-git clone [https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem.git](https://github.com/Ilya-arch13/Neighbly.ArchitectureHarmonyIndexSystem.git)
-cd Neighbly.ArchitectureHarmonyIndexSystem
+1. Clone the repository
 ```
-
-**2. Install dependencies:**
-```bash
-pip install -r requirements.txt
+git clone https://github.com/your-username/ahi-ultimate.git
 ```
-
-**3. Run the demonstration:**
-```bash
-python examples/pipeline_demo.py
+2. Install frontend dependencies
 ```
+cd ahi-ultimate npm install
+```
+3. Run the backend (in a separate terminal)
+```
+cd backend pip install -r requirements.txt python main_analysis_server.py
+```
+4. Run the client
+```
+npm run dev
+```
+## Validation and TRL
+The system includes the automatic self-diagnostic module `PhysicsBenchmarks.ts`. Upon startup, the following are checked:
 
-After running the script, a full analysis report of a sample room will appear in the console, and a set of 8 high-resolution visualizations will be generated in the pipeline_results folder.
+- **Poiseuille Flow:** L2 Error < 1% (passed).
 
+- **Lid-Driven Cavity:** Re=1000, eddy matching with Ghia et al. data (passed).
 
-## Project Ecosystem
+- **Acoustics:** Convergence of the FDTD method with Sabine diffuse field theory.
 
-This repository is the "scientific heart" of a larger project. An Android mobile application has already been developed based on this engine, providing users with access to the analysis in a convenient chatbot format. A community is forming around the project in Telegram, where ideas for improving living spaces and the future development of the Index are discussed.
+## Collaboration
+We invite **architects**, **HVAC engineers**, and **neuroscience researchers** to participate in beta testing (progressing to TRL 7).
+Please open Issues for suggestions for improving the physics models or UX.
 
-
-## The Future of the Project
-
-The current system is a powerful tool for analyzing existing spaces. However, this is just the first step. The long-term goal of the project is to use this foundation to create principles for designing adaptive architectural systems. These are spaces that can not only be statically "good" but can also independently analyze their state and dynamically change to maintain the highest level of harmony, responding to changes in the environment and human needs.
+## License
+This project is licensed under the **GNU AGPL v3.0** license.
+*If you use this code in a web service, **you must make your modifications open source***.
 
 ## Contact Me
 
