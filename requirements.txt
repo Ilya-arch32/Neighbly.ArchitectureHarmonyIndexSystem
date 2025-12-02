@@ -1,0 +1,15 @@
+# Core Scientific Stack
+numpy>=1.24.0 pandas>=2.0.0 scipy>=1.10.0
+
+# Web Server (FastAPI)
+fastapi>=0.100.0 uvicorn[standard]>=0.22.0 pydantic>=2.0.0
+
+# Image Processing (Neuroaesthetics)
+opencv-python-headless>=4.8.0 scikit-learn>=1.3.0
+
+# Solar & Weather Utils
+ephem>=4.1
+pvlib>=0.10.0
+
+# Utilities
+requests>=2.31.0 python-multipart>=0.0.6
