@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Build outputs
+dist/
+build/
+*.epw        # Генерируемые файлы погоды не нужны в репо
+*.json       # Локальные конфиги тоже не нужны
+sim_results/ # Папки с результатами тестов
+
+# OS Generated
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Heavy 3D models (если они не являются демо-примерами)
+# assets/models/*.ifc
+# assets/models/*.glb
