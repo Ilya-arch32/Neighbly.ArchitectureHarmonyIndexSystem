@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software for architectural analysis or research, please cite it as below."
+authors:
+- family-names: "Trofimov"
+  given-names: "Ilya"
+title: "Architectural Harmony Index System"
+version: 2.0.0-beta
+date-released: 2024-05-22
+url: "https://github.com/yourusername/ahi-ultimate"
+keywords:
+  - "neuroarchitecture"
+  - "cfd"
+  - "lattice-boltzmann-method"
+  - "webgpu"
+  - "building-performance-simulation"
+  - "neuroaesthetics"
+  - "acoustics-fdtd"
+abstract: >-
+ AHI - A tool counts the "harmony" of the building, living in my application "Neighbly" & Revit plugin. 
+ Rated at TRL 6, it keeps on improving to deserve the name of the first architecture, urban & planning tool, known elswhere. 
+ In future, it'll have a younger sister - Architecture Chaos Index System. 
+license: AGPL-3.0
+references:
+  - type: software
+    title: "Three.js"
+    url: "https://threejs.org/"
+  - type: standard
+    title: "ISO 13788:2012 Hygrothermal performance of building components"
+    institution:
+      name: "International Organization for Standardization"
